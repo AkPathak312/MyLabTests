@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LabTests">
+  <com.mancj.materialsearchbar.MaterialSearchBar
+      android:layout_margin="10dp"
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      app:mt_hint="Search lab tests"
+      app:mt_placeholder="Search"
+      android:background="#fff"
+      app:mt_borderlessRippleEnabled="true"
+      android:elevation="10dp"
+      />
+  <ListView
+      android:id="@+id/lablistview"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:padding="5dp"
+      android:layout_margin="5dp"/>
+</LinearLayout>

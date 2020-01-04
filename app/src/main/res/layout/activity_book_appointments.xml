@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+
+    tools:context=".BookAppointments">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:fontFamily="monospace"
+        android:textColor="#000"
+        android:padding="2dp"
+        android:layout_marginBottom="15dp"
+        android:text="We offer best care at our main campus in Patna, Bihar. If you want to book an appointment with us, use the form below (or call toll-free 1800-120-2216). Our scheduling coordinators will provide personalized service in English or Hindi within one day."/>
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_margin="2dp"
+        android:padding="2dp"
+        android:drawableRight="@drawable/asterisk"
+        android:text="Name : "/>
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:hint="Your Name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_margin="2dp"
+        android:padding="2dp"
+        android:drawableRight="@drawable/asterisk"
+        android:text="Gender : "/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <RadioButton
+        android:id="@+id/rbmale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:textSize="16dp"/>
+    <RadioButton
+        android:id="@+id/rbfemale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Female"
+        android:textSize="16dp"/>
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_margin="2dp"
+        android:padding="2dp"
+        android:drawableRight="@drawable/asterisk"
+        android:text="Age : "/>
+    <EditText
+        android:id="@+id/txtAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:inputType="number"
+        android:hint="Age"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_margin="2dp"
+        android:padding="2dp"
+        android:drawableRight="@drawable/asterisk"
+        android:text="Mobile Number : "/>
+    <EditText
+        android:id="@+id/txtMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:inputType="number"
+        android:hint="Mobile number"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_margin="2dp"
+        android:padding="2dp"
+        android:drawableRight="@drawable/asterisk"
+        android:text="Email ID : "/>
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email id..."/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_margin="2dp"
+        android:padding="2dp"
+        android:drawableRight="@drawable/asterisk"
+        android:text="City : "/>
+    <EditText
+        android:id="@+id/txtCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:hint="Current city of residence"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_margin="2dp"
+        android:padding="2dp"
+        android:drawableRight="@drawable/asterisk"
+        android:text="Select Department : "/>
+    <Spinner
+        android:id="@+id/spindept"
+        android:entries="@array/dept_array"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        />
+
+    <Button
+        android:id="@+id/btnBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book Appointment"
+        android:layout_margin="10dp"
+        android:textColor="#fff"
+        android:background="#ff0000" />
+
+</LinearLayout>
+</ScrollView>

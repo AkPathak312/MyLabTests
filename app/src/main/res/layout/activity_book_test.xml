@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".BookTest">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <androidx.cardview.widget.CardView
+            app:cardElevation="10dp"
+            app:cardCornerRadius="16dp"
+            android:elevation="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/doclogo"
+                    android:layout_margin="2dp"
+                    android:layout_gravity="bottom|end"/>
+                <TextView
+                    android:padding="10dp"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Book a Test"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:src="@drawable/doclogo"
+                    android:layout_gravity="bottom|end"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:textColor="#000"
+            android:padding="2dp"
+            android:layout_marginBottom="15dp"
+            android:text="We offer best care at our main campus in Patna, Bihar. If you want to book an appointment with us, use the form below (or call toll-free 1800-120-2216). Our scheduling coordinators will provide personalized service in English or Hindi within one day."/>
+
+        <TextView
+            android:id="@+id/txtbookingfor"
+            android:layout_width="wrap_content"
+            android:textColor="#000"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_margin="2dp"
+            android:padding="2dp"
+            android:text="Booking For : "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_margin="2dp"
+            android:padding="2dp"
+            android:drawableRight="@drawable/asterisk"
+            android:text="Name : "/>
+        <EditText
+            android:id="@+id/txtbtname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:hint="Your Name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_margin="2dp"
+            android:padding="2dp"
+            android:drawableRight="@drawable/asterisk"
+            android:text="Gender: "/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbbtmale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textSize="20dp"/>
+            <RadioButton
+                android:id="@+id/rbbtfemale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textSize="20dp"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_margin="2dp"
+            android:padding="2dp"
+            android:drawableRight="@drawable/asterisk"
+            android:text="Age : "/>
+        <EditText
+            android:id="@+id/txtbtAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:inputType="date"
+            android:hint="Age (In Years)"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_margin="2dp"
+            android:padding="2dp"
+            android:drawableRight="@drawable/asterisk"
+            android:text="Mobile Number : "/>
+        <EditText
+            android:id="@+id/txtbtMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:inputType="number"
+            android:hint="Mobile number"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_margin="2dp"
+            android:padding="2dp"
+            android:drawableRight="@drawable/asterisk"
+            android:text="Email ID : "/>
+        <EditText
+            android:id="@+id/txtbtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:inputType="textEmailAddress"
+            android:hint="Email id..."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_margin="2dp"
+            android:padding="2dp"
+            android:drawableRight="@drawable/asterisk"
+            android:text="City : "/>
+        <EditText
+            android:id="@+id/txtbtCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:hint="Current city of residence"/>
+
+        <Button
+            android:id="@+id/btnBookTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Test"
+            android:layout_margin="10dp"
+            android:textColor="#fff"
+            android:background="#ff0000"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

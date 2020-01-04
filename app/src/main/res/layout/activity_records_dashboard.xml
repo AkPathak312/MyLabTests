@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".RecordsDashboard">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:elevation="10dp"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/myappointments"
+                android:layout_height="150dp"
+                />
+            <Button
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffccbb"
+                android:elevation="10dp"
+                android:shadowColor="#000"
+                android:onClick="gotomyappointments"
+                android:text="My Appointments"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:elevation="10dp"
+
+            app:cardCornerRadius="15dp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:src="@drawable/mylabtests"
+                    android:layout_height="150dp"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:background="#add8e6"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="My Lab Tests"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:elevation="10dp"
+
+            app:cardCornerRadius="15dp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:src="@drawable/myhp"
+                    android:layout_height="150dp"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="#90ee90"
+                    android:layout_height="wrap_content"
+                    android:text="My Packages"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mylabtests">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".RecordsDashboard"
+            android:label="My Appointments"
+            android:parentActivityName=".UserDashboard"
+            android:theme="@style/Theme.AppCompat.Light"/>
+        <activity android:name=".VerifyOTP" />
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".BookingConfirm"
+            android:label="Booking Confirmation"
+            android:parentActivityName=".UserDashboard"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".MyRecords"
+            android:label="My Records"
+            android:parentActivityName=".RecordsDashboard"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".BookTest"
+            android:label="Book a Test"
+            android:parentActivityName=".LabTests"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".LabTests"
+            android:label="Lab Tests"
+            android:parentActivityName=".UserDashboard"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".AboutRuban"
+            android:label="About Us"
+            android:parentActivityName=".UserDashboard"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".BookAppointments"
+            android:label="Book an appointment"
+            android:parentActivityName=".UserDashboard"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".HealthPackages"
+            android:label="Health Packages"
+            android:parentActivityName=".UserDashboard"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".UserDashboard"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

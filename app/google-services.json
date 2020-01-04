@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "595256669972",
+    "firebase_url": "https://mylabtests-e6f9c.firebaseio.com",
+    "project_id": "mylabtests-e6f9c",
+    "storage_bucket": "mylabtests-e6f9c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595256669972:android:5db9d17b5c9d6965b07401",
+        "android_client_info": {
+          "package_name": "com.example.mylabtests"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "595256669972-97vqf0g997o8hkvh5g21gqkjddndv59b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mylabtests",
+            "certificate_hash": "5bce36d6e2184e13eaaa58344c508490bdef5708"
+          }
+        },
+        {
+          "client_id": "595256669972-ctabsbovf6vd8rmqt4srjufj7bbt4inq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7n4vR3ZXFVMHZMQvVPq0Q09Cnaot61ss"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "595256669972-ctabsbovf6vd8rmqt4srjufj7bbt4inq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

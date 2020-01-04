@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group
+        android:id="@+id/gp"
+        android:checkableBehavior="single">
+
+    <item android:id="@+id/dashboard" android:title="My Dashboard"  android:icon="@drawable/dashboard"/>
+    <item android:id="@+id/menulab" android:title="Lab Tests"  android:icon="@drawable/labtestsmenu"/>
+    <item android:id="@+id/menurecord" android:title="My Records" android:icon="@drawable/myrecords"/>
+    <item android:id="@+id/menusett" android:title="About" android:icon="@drawable/aboutus"/>
+    <item android:id="@+id/logout" android:title="Logout" android:icon="@drawable/logout"/>
+
+    </group>
+</menu>
+
